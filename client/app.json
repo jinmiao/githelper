@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/addCgi/addCgi"
+    "pages/addCgi/addCgi",
+    "pages/me/index"
   ],
   "window":{
     "backgroundColor":"#F6F6F6",
@@ -29,7 +30,7 @@
         "selectedIconPath":"image/icon_component_HL.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/me/index",
         "text": "我的",
         "color": "#ddd",
         "selectedColor": "#3cc51f",
