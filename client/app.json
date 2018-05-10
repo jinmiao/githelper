@@ -9,5 +9,33 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "Wafer Quick Start",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "color": "#ddd",
+        "selectedColor": "#3cc51f",
+        "iconPath":"image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png"
+      },
+      {
+        "pagePath": "pages/addCgi/addCgi",
+        "text": "CGI",
+        "color": "#ddd",
+        "selectedColor": "#3cc51f",
+        "iconPath": "image/icon_component.png",
+        "selectedIconPath":"image/icon_component_HL.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "color": "#ddd",
+        "selectedColor": "#3cc51f",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png"
+      }
+    ]
   }
 }
