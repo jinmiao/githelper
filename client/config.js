@@ -3,7 +3,8 @@
  */
 
 // 此处主机域名修改成腾讯云解决方案分配的域名
-var host = 'https://zb1kmx4i.qcloud.la';
+var debug = false
+var host = debug ? 'https://zb1kmx4i.qcloud.la' : 'https://703397036.githelper.club';
 
 var config = {
 

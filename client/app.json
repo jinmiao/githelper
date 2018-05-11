@@ -5,37 +5,37 @@
     "pages/me/index"
   ],
   "window":{
-    "backgroundColor":"#F6F6F6",
+    "backgroundColor":"#11213a",
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "Wafer Quick Start",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#11213a",
+    "navigationBarTitleText": "Git小助手",
+    "navigationBarTextStyle":"white"
   },
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "color": "#ddd",
+        "color": "#8a8a8a",
         "selectedColor": "#3cc51f",
-        "iconPath":"image/icon_API.png",
-        "selectedIconPath": "image/icon_API_HL.png"
+        "iconPath":"image/ic_home.png",
+        "selectedIconPath": "image/ic_home_full.png"
       },
       {
         "pagePath": "pages/addCgi/addCgi",
         "text": "CGI",
-        "color": "#ddd",
+        "color": "#8a8a8a",
         "selectedColor": "#3cc51f",
-        "iconPath": "image/icon_component.png",
-        "selectedIconPath":"image/icon_component_HL.png"
+        "iconPath": "image/ic_category.png",
+        "selectedIconPath":"image/ic_category_full.png"
       },
       {
         "pagePath": "pages/me/index",
         "text": "我的",
-        "color": "#ddd",
+        "color": "#8a8a8a",
         "selectedColor": "#3cc51f",
-        "iconPath": "image/icon_API.png",
-        "selectedIconPath": "image/icon_API_HL.png"
+        "iconPath": "image/ic_me.png",
+        "selectedIconPath": "image/ic_me_full.png"
       }
     ]
   }
