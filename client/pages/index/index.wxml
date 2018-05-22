@@ -1,40 +1,28 @@
-<!--index.wxml-->
-<view class="container">
-
-    <!-- Page body -->
-    <view class="page-body">
-
-    <!-- Swpie -->
-    <view class="page-section page-section-spacing swiper">
-      <swiper
-        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
-        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
-        <block wx:for="{{background}}" wx:key="*this">
-          <swiper-item>
-            <view class="swiper-item {{item}}"></view>
-          </swiper-item>
-        </block>
-      </swiper>
-    </view>
-
-    <!-- 首页简介 -->
-    <view class="guide">
-        <text class="headline">关于Git小助手</text>
-        <text class="p">1. 打开 server/routes/index.js 文件，添加如下语句：</text>
-        <text class="p">2. 在 server/controllers 下新建一个 demo.js 文件，写入如下代码：</text>
-        <text class="p">3. 点击开发者工具右上角“腾讯云” - “上传测试代码”，勾选“智能上传”</text>
-        <text class="p">4. 点击测试 CGI 按钮，即可看到结果</text>
-    </view>
-
-    <!-- 请求按钮 -->
-    <view class="list">
-        <view class="list-item" bindtap="testCgi">
-            <text>小程序更新日志</text>
+<view class="index">
+  <view class="index-hd">
+    <image class="index-logo" src="../../image/icon_component.png"></image>
+    <view class="index-desc">快速查询Git有关的命令</view>
+  </view>
+  <view class="index-bd">
+    <view class="kind-list">
+      <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+        <view class="kind-list-item">
+          <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
+            <view class="kind-list-text">{{item.name}}</view>
+             <!-- <image class="kind-list-img" src="resources/kind/{{item.id}}.png"></image>  -->
+          </view>
+          <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+            <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
+              <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
+                <navigator url="pages/{{page}}/{{page}}" class="navigator">
+                  <view class="navigator-text">{{page}}</view>
+                  <!-- <view class="navigator-arrow"></view> -->
+                </navigator>
+              </block>
+            </view>
+          </view>
         </view>
-        <view class="list-item">
-            <text class="request-text">v1.0.2</text>
-        </view>
+      </block>
     </view>
-
   </view>
 </view>
