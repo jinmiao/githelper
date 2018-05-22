@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/home/index",
     "pages/index/index",
     "pages/addCgi/addCgi",
     "pages/me/index"
@@ -10,33 +11,5 @@
     "navigationBarBackgroundColor": "#11213a",
     "navigationBarTitleText": "Git小助手",
     "navigationBarTextStyle":"white"
-  },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "color": "#8a8a8a",
-        "selectedColor": "#3cc51f",
-        "iconPath":"image/ic_home.png",
-        "selectedIconPath": "image/ic_home_full.png"
-      },
-      {
-        "pagePath": "pages/addCgi/addCgi",
-        "text": "CGI",
-        "color": "#8a8a8a",
-        "selectedColor": "#3cc51f",
-        "iconPath": "image/ic_category.png",
-        "selectedIconPath":"image/ic_category_full.png"
-      },
-      {
-        "pagePath": "pages/me/index",
-        "text": "我的",
-        "color": "#8a8a8a",
-        "selectedColor": "#3cc51f",
-        "iconPath": "image/ic_me.png",
-        "selectedIconPath": "image/ic_me_full.png"
-      }
-    ]
   }
 }
